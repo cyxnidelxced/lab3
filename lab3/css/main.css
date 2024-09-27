@@ -1,0 +1,71 @@
+body {
+    background-image: url(../images/starry.jpg);
+}
+
+h1, h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.box {
+    background-color:rgb(0, 255, 221);
+    width: 300px;
+    height: 300px;
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+.wake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#myBtn1 {
+    font-size: 1rem;
+    margin-left: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+#myBtn2 {
+    font-size: 1rem;
+    margin-left: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.box2 {
+    background-color:rgb(255, 181, 85);
+    width: 200px;
+    height:200px;
+    font-size:7.5rem;
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    position: relative;
+}
+
+.move {
+    transition: all 1s;
+    transform: translate(250px, 150px) rotate(360deg);
+}
